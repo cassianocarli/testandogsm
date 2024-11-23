@@ -44,7 +44,7 @@ app.get('/api/data', (req, res) => {
   res.status(200).json({ data: sensorData });
 });
 
-// Iniciar o servidor
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
