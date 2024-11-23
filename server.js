@@ -2,9 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const moment = require('moment');  // Para lidar com data e hora
 const cors = require('cors');
-app.use(cors());
 
 const app = express();
+
+// Habilitar CORS
+app.use(cors());
 
 // Usando a variável de ambiente PORT definida pelo Render
 const port = process.env.PORT || 3000;  // Caso a variável de ambiente não esteja definida, usaremos a porta 3000
