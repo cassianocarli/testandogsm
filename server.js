@@ -3,7 +3,9 @@ const bodyParser = require('body-parser');
 const moment = require('moment');  // Para lidar com data e hora
 
 const app = express();
-const port = 5000;
+
+// Use a variável de ambiente PORT fornecida pelo Render, ou 5000 como fallback
+const port = process.env.PORT || 5000; 
 
 // Middleware para analisar os dados do corpo da requisição
 app.use(bodyParser.urlencoded({ extended: true }));
