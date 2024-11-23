@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const moment = require('moment');  // Para lidar com data e hora
+const cors = require('cors');
+app.use(cors());
 
 const app = express();
 
