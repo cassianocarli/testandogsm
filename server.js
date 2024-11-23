@@ -4,8 +4,8 @@ const moment = require('moment');  // Para lidar com data e hora
 
 const app = express();
 
-// Use a variável de ambiente PORT fornecida pelo Render, ou 5000 como fallback
-const port = process.env.PORT || 5000; 
+// Usando a variável de ambiente PORT definida pelo Render
+const port = process.env.PORT || 3000;  // Caso a variável de ambiente não esteja definida, usaremos a porta 3000
 
 // Middleware para analisar os dados do corpo da requisição
 app.use(bodyParser.urlencoded({ extended: true }));
